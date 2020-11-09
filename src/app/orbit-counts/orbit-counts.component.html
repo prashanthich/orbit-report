@@ -1,0 +1,12 @@
+<h3>Satellite Counts:</h3>
+<table class="counts">
+    <tr >
+       <th>Total:</th>
+       <th><span>{{satellites.length}}</span></th>
+    </tr>
+    <tr *ngFor="let type of getUniqueTypes()">
+        <td>{{type}}:</td>
+        <td><span>{{countByType(type)}}</span></td>
+    </tr>
+    
+ </table>
